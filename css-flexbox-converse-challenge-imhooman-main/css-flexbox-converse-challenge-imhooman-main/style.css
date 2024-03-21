@@ -1,0 +1,222 @@
+/* Starting Styles for Converse Challenge */
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing:border-box;
+  
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Practice using CLASSES to style elements rather than ELEMENT selectors
+(and don't use ID# selectors) */
+
+/* .product - wraps the entire content */
+.product {
+  /* right: 100px; */
+  
+  width: 826px;
+  padding: 0px;
+  border-top: solid 5px black;
+  border-bottom: solid 5px black;
+  border-left: solid 5px black;
+  border-right:solid 5px black;
+  position:absolute;
+  top: 100px;
+  left: 200px;
+  margin:auto;
+
+
+  
+ 
+}
+.title {
+  width: 100%;
+  font-size:x-large;
+  text-transform:uppercase;
+  text-align: center;
+  background-color:rgb(212, 212, 212);
+  color:black;
+  padding:10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Product Information */
+.info {
+  background-color:white;
+  display: flex;
+  flex-flow:column wrap;
+  flex:1;
+  /* align-items: ; */
+  
+}
+.info-head{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.info p{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.price {
+  font-size:large;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.shipping {
+  text-transform:uppercase;
+  color:rgb(179, 179, 179);
+  font-weight:bold;
+  font-size:15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  
+}
+
+/* style links always list all 4 states in order LVHA */
+/* here link and visited are same style */
+.more-info:link,
+.more-info:visited {
+  color:black;
+  display: inline-block;
+  margin: 30px;
+  margin-top:20px
+
+}
+
+/* apply style to both hover and active states */
+.more-info:hover,
+.more-info:active {
+  text-decoration:dashed;
+  color:rgb(27, 27, 27);
+}
+/*END of Product Information*/
+
+/* Product Details */
+.details{
+  flex:1;
+  margin-top: 10px;
+}
+.details-title {
+  text-transform:uppercase;
+  font-size:large;
+  margin-top:10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  flex-wrap: wrap;
+}
+
+.details-list {
+  margin-left:50px;
+  margin-bottom:15px;
+  list-style: square;
+  line-height:25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.details-list li {
+  gap:30px;
+  margin-bottom: 5px;
+  
+  
+}
+/*END of Product Details*/
+
+/*Add to Cart */
+.add-cart {
+  margin: 2px;
+  background-color:rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
+  font-size:large;
+  cursor:context-menu;
+  text-transform:uppercase;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+/* add hover pseudo-class to .add-cart style */
+.add-cart:hover {
+  background-color:whitesmoke;
+  color:rgb(0, 0, 0);
+}
+/*END of Add to Cart*/
+
+/*Color Blocks*/
+
+.colors{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+.color {
+  background-color:rgb(37, 33, 33);
+  width: 25px;
+  height: 25px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+}
+
+.color-black{
+  background-color: black;
+}
+.color-red {
+  background-color:red;
+}
+.color-blue {
+  background-color:blue;
+}
+.color-yellow {
+  background-color:yellow;
+}
+.color-green {
+  background-color:green;
+}
+.color-brown {
+  background-color:rgb(161, 91, 11);
+}
+/*End of Color Blocks */
+
+/*Sale in Corner*/
+.sale {
+  background-color:red;
+  display:inline-block; /* better way to set width */
+  color:white;
+  letter-spacing:2px;
+  font-weight:bold;
+  text-transform:uppercase;
+  padding:8px   15px;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* POSITIONING (Out-of-flow) */
+  position:absolute;
+  top:-30px;
+  left: -65px;
+  /* display: flex;
+  flex-direction: row; */
+}
+/*END of Sale*/
+
+/*Flexbox Layout*/
+/*Determine which classes need to be flex containers and which are flex items */
+.row{
+  display:flex;
+ 
+  
+}
